@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Grid Design Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                text-align: center;
+                margin:0;
+            }
+            .row::after{
+                content:"";
+                clear:both;
+                display: block;
+            }
+            .menu,.right{
+                width:25%;border: 2px solid white;float:left;
+            }
+            [class*="col-"]{
+                padding:1%;
+                float:left;
+                border: 2px solid white;
+            }
+            .col-1{
+                width:8.33%;
+            }
+            .col-2{
+                width:16.66%;
+            }
+            .col-3{
+                width:25%;
+            }
+            .col-4{
+                width:33.33%;
+            }
+            .col-5{
+                width:41.66%;
+            }
+            .col-6{
+                width:50%;
+            }
+            .col-7{
+                width:58.33%;
+            }
+            .col-8{
+                width:66.33%;
+            }
+            .col-9{
+                width:75%;
+            }
+            .col-10{
+                width:83.33%;
+            }
+            .col-11{
+                width:91.66%;
+            }
+            .col-12{
+                width:100%;
+            }
+            .header{
+                background-color: darkblue;
+                color:white;
+                padding: 15px;
+            }
+            .right{
+                background-color: lightblue;
+                min-height: 180px;
+                float: right;
+            }
+            
+             .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+footer{
+    padding:30px;background-color: darkblue;width: 100%;
+}
+@media(min-width:376px) and (max-width:768px){
+    .menu,.right{
+                width:50%;border: 2px solid white;
+            }
+}
+@media(max-width:375px){
+    .menu,.right{
+                width:100%;border: 2px solid white;
+            }
+}
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Responsive web design</h1>
+        </div>
+        <div class="row">
+        <div class="menu">
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+                <li>Menu 4</li>
+            </ul>
+        </div>
+        <div class="right"></div>
+        </div>
+        <footer></footer>
+        
+    </body>
+</html>

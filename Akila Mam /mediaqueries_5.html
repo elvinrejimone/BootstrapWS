@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Media Queries</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        <style>
+            /************base style**************/
+            body{background-color: magenta}
+           
+            @media(max-width:320px){
+                body{background-color: yellow}
+            }
+            @media(min-width:321px) , (max-width:375px){
+                body{background-color: blue}
+            }
+             @media(min-width:376px) and (max-width:425px){
+                body{background-color: red}
+            }
+            @media(min-width:426px) and (max-width:768px){
+                 body{background-color: salmon}
+            }
+            @media print{
+                body{color:red;background-color:greenyellow}
+            }
+/*            @media (orientation:landscape){
+                body{color:red;background-color:greenyellow}
+            }
+            }*/
+        </style>
+    </head>
+    <body>
+        <h1>Media Queries</h1>
+    </body>
+</html>
